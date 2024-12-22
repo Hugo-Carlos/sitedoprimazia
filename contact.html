@@ -1,0 +1,142 @@
+<!DOCTYPE html> <html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Oficial do Primazia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imagens/logo do primazia do kilamba.png"></a>
+            <div class="nav-links" id="navLinks">
+                <div class="close-icon" onclick="hideMenu()">&times;</div>
+
+                <ul>
+                   <li><a href="index.html">INÍCIO</a></li>
+                   <li><a href="about.html">SOBRE NÓS</a></li>
+                   <li><a href="course.html">CURSOS</a></li>
+                   <li><a href="blog.html">BLOG</a></li>
+                   <li><a href="contact.html">CONTACTO</a></li> 
+                </ul>
+            </div>
+            <div class="menu-icon">
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </div>
+            
+             
+        </nav>
+        <h1>Contacte-nos</h1>
+    </section>
+
+<!--- contact us --->
+
+<section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.584234068961!2d13.28650067484563!3d-9.010349191050238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a521d7af1c63531%3A0xe3897bc9eac3db35!2sCol%C3%A9gio%20Primazia%20do%20kilamba!5e0!3m2!1spt-PT!2sao!4v1733052449541!5m2!1spt-PT!2sao" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<section class="contact-us">
+
+<div class="row">
+    <div class="contact-col">
+        <div>
+            <i class="fas fa-home"></i>
+            <span>
+                <h5>Centralidade do Kilamba, rua direita do Kero junto ao edifÍcio B5 do KK 5000</h5>
+                <p>Angola, Luanda</p>
+            </span>
+        </div>
+        <div>
+            <i class="fas fa-phone"></i>
+            <span>
+                <h5>+244 938 224 837 </h5>
+                <p>De 2ª a 6ª, das 8h às 17h30m</p>
+                <p>Sábado, das 8h às 12h30</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <span>
+                <h5>colegioprimaziadokilamba@gmail.com</h5>
+                <p>Envie-nos sua pergunta por e-mail</p>
+            </span>
+        </div>
+    </div>
+<div class="contact-col">
+
+    <form action="form.handler.php" method="post">
+        <input type="text" name="name" placeholder="Seu nome" required>
+        <input type="text" name="email" placeholder="Seu email" required>
+        <input type="text" name="subject" placeholder="O assunto" required>
+        <textarea rows="8" name="message" placeholder="Mensagem" required></textarea>
+        <button type="submit" class="hero-btn red-btn">Enviar mensagem</button>
+    </form>
+
+
+
+    </div>
+</div>
+
+</section>
+
+
+
+<section class="cta">
+    <h1>Aproveite fazer a Inscrição, a Matrícula e o seu Pagamento <br> em Qualquer Parte do Mundo</h1>
+    <a href="C:\Users\User\OneDrive\Ambiente de Trabalho\Websites using html, css and js\site 4 primazia\matricula, inscricao e propina 2\index.html" class="hero-btn">CONTACTE-NOS</a>
+</section>
+
+
+
+
+
+
+<!----- Footer ----->
+
+<section class="footer">
+    <h4>Sobre Nós</h4>
+    <p>O Colégio Primazia do Kilamba é uma instituição de ensino de excelência, comprometida com a formação integral dos seus alunos. Localizado na Centralidade do kilamba, rua direita do Kero junto ao edificio B5 do KK 5000, Luanda, Angola, oferecemos uma educação de qualidade que combina inovação tecnológica, valores éticos e uma abordagem pedagógica moderna.  
+        
+        Nosso objetivo é preparar os estudantes para os desafios do futuro, promovendo o desenvolvimento académico, cultural e social. Com uma equipa de profissionais altamente qualificados e uma infraestrutura acolhedora, garantimos um ambiente propício ao aprendizado e ao crescimento pessoal.  
+        
+        No Colégio Primazia do Kilamba, acreditamos que a educação transforma vidas e construímos diariamente um futuro melhor para os nossos alunos e para a sociedade.</p>
+
+    <div class="icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <p>Feito com <i class="far fa-heart"></i>
+        por Grupo Nº 2</p>
+</section>
+
+
+
+
+
+
+
+
+<!-------JavaScript para toggle/alternar Menu-------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
